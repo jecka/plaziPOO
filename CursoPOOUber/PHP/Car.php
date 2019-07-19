@@ -1,12 +1,12 @@
 <?php
-require_once 'Account.php'
+require_once ('Account.php');
 class Car{
   public $id;
   public $license;
   Account $driver;
   public $passenger;
 
-  function __construct($license , Account $driver){
+  public function __construct($license , Account $driver){
     $this->license  = $license;
     $this->driver = $driver;
   }
